@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siella</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav sticky">
+      <img src="./images/40843.jpg" alt="logo-img" class="logo-icon" />
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#feature" class="nav-link">Feature</a></li>
+          <li><a href="#blog" class="nav-link">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-icon-container">
+        <ion-icon name="search-outline" class="nav-icon"></ion-icon>
+        <ion-icon name="bag-handle-outline" class="nav-icon"></ion-icon>
+        <ion-icon name="person-outline" class="nav-icon"></ion-icon>
+        <ion-icon name="earth-outline" class="nav-icon"></ion-icon>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="slider">
+        <div class="slide slide--1">
+          <img src="./images/hero-img.jpg" alt="hero-img" class="hero-img" />
+          <div class="header-text-container">
+            <h1 class="heading-primary">Mermaid Bundle</h1>
+            <button class="btn btn-shop btn--scroll-to">Shop now</button>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <img src="./images/header1.jpg" alt="hero-img" class="hero-img" />
+          <div class="header-text-container">
+            <h1 class="heading-primary">Glow Bundle</h1>
+            <button class="btn btn-shop btn--scroll-to">Shop now</button>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <img src="./images/header2.jpg" alt="hero-img" class="hero-img" />
+          <div class="header-text-container">
+            <h1 class="heading-primary">40% Discount</h1>
+            <button class="btn btn-shop btn--scroll-to">Shop now</button>
+          </div>
+        </div>
+
+        <div class="slide slide--4">
+          <img src="./images/header3.jpg" alt="hero-img" class="hero-img" />
+          <div class="header-text-container">
+            <h1 class="heading-primary">
+              Keep your lips hydrated during all seasons
+            </h1>
+            <button class="btn btn-shop btn--scroll-to">Shop now</button>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Best seller section -->
+      <section class="section-best" id="shop">
+        <div class="section-heading-container">
+          <h2 class="heading-secondary">Best sellers</h2>
+          <a href="#" class="shop btn--scroll-to">shop all &rarr;</a>
+        </div>
+        <div class="grid grid-col--4">
+          <div class="best-product-container">
+            <figure>
+              <img
+                src="./images/PLUMKOHLKAJAL-793888857315-c.jpg"
+                class="product-img"
+              />
+            </figure>
+            <figcaption>Kohl Kajal</figcaption>
+            <p class="description">Multipurpose, intense, long-lasting</p>
+            <div class="color-container">
+              <div class="color color--1"></div>
+              <div class="color color--2"></div>
+              <div class="color color--3"></div>
+              <div class="color color--4"></div>
+              <div class="color color--5"></div>
+            </div>
+            <div class="product-sub">Plum</div>
+            <button class="btn btn--add">Add to bag - AED 75.00</button>
+          </div>
+
+          <div class="best-product-container">
+            <figure>
+              <img
+                src="./images/PearlaBlushedBlush-787790869498-a.jpg"
+                class="product-img"
+              />
+            </figure>
+            <figcaption>Glowria Highlighter</figcaption>
+            <p class="product-description">
+              An ultra glowy & radiant highlighter
+            </p>
+            <div class="color-container">
+              <div class="color color--1"></div>
+              <div class="color color--2"></div>
+              <div class="color color--3"></div>
+              <div class="color color--4"></div>
+              <div class="color color--5"></div>
+            </div>
+            <div class="product-sub">PSugar coated</div>
+            <button class="btn btn--add">Add to bag - AED 140.00</button>
+          </div>
+
+          <div class="best-product-container">
+            <figure>
+              <img src="./images/BronzaCopper.jpg" class="product-img" />
+            </figure>
+            <figcaption>Bronza Bronzer</figcaption>
+            <p class="product-description">A lightweight Brongzing powder.</p>
+            <div class="color-container">
+              <div class="color color--1"></div>
+              <div class="color color--2"></div>
+              <div class="color color--3"></div>
+              <div class="color color--4"></div>
+              <div class="color color--5"></div>
+            </div>
+            <div class="product-sub">Copper</div>
+            <button class="btn btn--add">Add to bag - AED 105.00</button>
+          </div>
+
+          <div class="best-product-container">
+            <figure>
+              <img
+                src="./images/GlazedGloss-793888854918-c.jpg"
+                class="product-img"
+              />
+            </figure>
+            <figcaption>Hydarting Gloss</figcaption>
+            <p class="product-description">A shiny balm-like hydarting gloss</p>
+            <div class="color-container">
+              <div class="color color--1"></div>
+              <div class="color color--2"></div>
+              <div class="color color--3"></div>
+              <div class="color color--4"></div>
+              <div class="color color--5"></div>
+            </div>
+            <div class="product-sub">Glazed</div>
+            <button class="btn btn--add">Add to bag - AED 80.00</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-in" id="feature">
+        <p class="featured-in-text">The best products for your routine</p>
+        <div class="icon-container">
+          <div class="icon-box">
+            <ion-icon name="leaf-outline" class="featured-icon"></ion-icon>
+            <span class="icon-description">Natural ingredient</span>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="fish-outline" class="featured-icon"></ion-icon>
+            <span class="icon-description">Cruelty free</span>
+          </div>
+          <div class="icon-box">
+            <ion-icon
+              name="accessibility-outline"
+              class="featured-icon"
+            ></ion-icon>
+            <span class="icon-description">Vitamine-enriched</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-catergory">
+        <div class="section-heading-container">
+          <h2 class="heading-secondary">Shop by catergory</h2>
+          <a href="#" class="shop">shop all &rarr;</a>
+        </div>
+
+        <div class="grid grid-col--4">
+          <figure class="catergory-container">
+            <img
+              src="./images/3af5c15f3fcbde5e0c08e2fac987e1db.png"
+              alt="face"
+              class="catergory-img"
+            />
+            <figcaption class="catergory-name">Face</figcaption>
+          </figure>
+          <figure class="catergory-container">
+            <img
+              src="./images/87a3c8adb0ed018995037065d525a732.png"
+              alt="lips"
+              class="catergory-img"
+            />
+            <figcaption class="catergory-name">Lips</figcaption>
+          </figure>
+          <figure class="catergory-container">
+            <img
+              src="./images/1b9ceb75ddc74cfca13c79fc3e12ff41.png"
+              alt="eyes"
+              class="catergory-img"
+            />
+            <figcaption class="catergory-name">Eyes</figcaption>
+          </figure>
+
+          <figure class="catergory-container">
+            <img
+              src="./images/64b92ceee7d9780028250bd5.jpg"
+              alt="brows"
+              class="catergory-img"
+            />
+            <figcaption class="catergory-name">Brows</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-carousel">
+        <div class="carousel-item active">
+          <div class="carousel-img-container">
+            <p class="carousel-img-sub">Lash champion mascara travel size</p>
+            <p class="carousel-img-text">
+              Give your sparse lashes the perfect defination
+            </p>
+          </div>
+
+          <div class="carousel-text-container">
+            <img
+              src="./images/Namshicopy2_47bd50d8-71fa-4125-a08f-ce64b9da9e99.jpg"
+              alt="eye lashes"
+              class="carousel-text-img"
+            />
+            <p class="text-title">Travel size lash champions mascara</p>
+            <p class="description">ideal for short and straight lashes</p>
+            <button class="btn btn-add">Add to bag - AED 80.00</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-blog" id="blog">
+        <div class="section-heading-container">
+          <h2 class="heading-secondary">Our Blog</h2>
+          <a href="#" class="shop">view all posts &rarr;</a>
+        </div>
+        <p class="section-des">
+          Understand your skin and its complex needs with our tips and tricks,
+          extensive guides and blog posts.
+        </p>
+        <div class="grid grid-col--4">
+          <div class="blog-container">
+            <img src="./images/BronzaCopper.jpg" alt="cushion foundation" />
+            <p class="blog-sub">Featured</p>
+            <p class="blog-describe">🤎 BRONZA Bronzer 🤎: Tips & Ticks</p>
+          </div>
+
+          <div class="blog-container">
+            <img
+              src="./images/freestocks-jVSbAFJBVsg-unsplash.jpg"
+              alt="cushion foundation"
+            />
+            <p class="blog-sub">Featured</p>
+            <p class="blog-describe">
+              🍒Cherry & Straberry🍓: Fruity tints to add a flush to your cheeks
+            </p>
+          </div>
+
+          <div class="blog-container">
+            <img
+              src="./images/gabrielle-henderson.jpg"
+              alt="cushion foundation"
+            />
+            <p class="blog-sub">Featured</p>
+            <p class="blog-describe">Summer must haves 2022</p>
+          </div>
+
+          <div class="blog-container">
+            <img
+              src="./images/PearlaBlushedBlush-787790869498-a.jpg"
+              alt="cushion foundation"
+            />
+            <p class="blog-sub">Featured</p>
+            <p class="blog-describe">Summer 2022 Makeup Trends</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid-col--5">
+        <div class="grid-container">
+          <p class="footer-logo">Siella <span>Beauty</span></p>
+          <p class="sign">Sign up for exclusive offers and updates.</p>
+          <p class="sign-sub">Get the latest news and updates from our team.</p>
+          <form id="emailForm">
+            <input
+              class="form-email"
+              type="text"
+              placeholder="Enter Email Address"
+              name="email"
+              required
+            />
+            <button type="submit" class="btn-submit">&rarr;</button>
+            <div id="message"></div>
+          </form>
+        </div>
+
+        <div class="grid-container">
+          <h3 class="footer-title">About</h3>
+          <ul class="footer-list">
+            <li class="footer-item">About us</li>
+            <li class="footer-item">Terms And Conditions</li>
+            <li class="footer-item">Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="grid-container">
+          <h3 class="footer-title">Shop</h3>
+          <ul class="footer-list">
+            <li class="footer-item">Best Sellers</li>
+            <li class="footer-item">Collections</li>
+            <li class="footer-item">Locations</li>
+            <li class="footer-item">Offers & Bundles</li>
+          </ul>
+        </div>
+
+        <div class="grid-container">
+          <h3 class="footer-title">Help & Advice</h3>
+          <ul class="footer-list">
+            <li class="footer-item">Return Policy</li>
+            <li class="footer-item">Shipping</li>
+            <li class="footer-item">Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="grid-container">
+          <h3 class="footer-title">Social</h3>
+          <ul class="footer-list">
+            <li class="footer-item">Instgram</li>
+            <li class="footer-item">Facebook</li>
+            <li class="footer-item">Youtube</li>
+            <li class="footer-item">TikTop</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-row">
+        <div class="footer-logo">
+          <img
+            src="http://www.mastercard.com/_globalAssets/img/logos/logo_mastercard_W120_H080.png"
+            alt="mastercard"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/512px-Visa_2021.svg.png"
+            alt="visa "
+          />
+        </div>
+        <div class="copyright">&copy; 2023-2024 Okio Cosmetics Trading</div>
+      </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
