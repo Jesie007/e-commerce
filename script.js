@@ -106,3 +106,51 @@ const prevSlide = function () {
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
+// Slider 2
+
+// const sliders = document.querySelector(".sliders");
+const slides2 = document.querySelectorAll(".slides");
+const btnLeft1 = document.querySelector(".slider__btn--left--1");
+const btnRight1 = document.querySelector(".slider__btn--right--1");
+
+let curSlide1 = 0;
+const maxSlide1 = slides2.length;
+const goToSlide1 = function (slide) {
+  slides2.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+goToSlide1(0);
+
+const nextSlide1 = function () {
+  if (curSlide1 === maxSlide1 - 1) {
+    curSlide1 = 0;
+  } else {
+    curSlide1++;
+  }
+
+  goToSlide(curSlide1);
+};
+
+const prevSlide1 = function () {
+  if (curSlide1 === 0) {
+    curSlide1 = maxSlide1 - 1;
+  } else {
+    curSlide1--;
+  }
+  goToSlide(curSlide1);
+};
+
+btnRight1.addEventListener("click", nextSlide1);
+btnLeft1.addEventListener("click", prevSlide1);
+
+// AJAX using WEB APIS
+// const request = fetch("https://countries-api-836d.onrender.com/countries/");
+// const getCountryData = function (country) {
+//   fetch("https://countries-api-836d.onrender.com/countries/")
+//     .then(
+//       (response) => response.json()
+//       // (err) => alert(err)
+//     )
+//     .then((data) => renderCountry(data[0]).catch((err) => alert(err)));
+// };
